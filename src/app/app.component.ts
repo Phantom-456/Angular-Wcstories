@@ -20,7 +20,7 @@ export class AppComponent {
   title = 'angular-wcstories';
   storieIndex: number = 0;
   imgIndex: number = 0;
-  imgProgress: number = 50;
+  imgProgress: number = 30;
   countRotation: number = 1;
   crrRotationDeg: number = 0;
   // const cub: HTMLDivElement = document.querySelector('.cub');
@@ -173,13 +173,13 @@ export class AppComponent {
     console.log("call..progresslevel")
     if (index === this.imgIndex) {
       this.progressCalculator();
-      return "width:{{this.imgProgress}}%";
+      return this.imgProgress+"%";
     }
     if (index < this.imgIndex) {
-      return "width:100%";
+      return "100%";
     }
     else{
-      return "width:0%";
+      return "0%";
     }
   }
   

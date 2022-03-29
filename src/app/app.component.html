@@ -59,7 +59,8 @@
         <div class="instagram-storie__progress-item" *ngFor="let index of stories[storieIndex].index">
           <div
             class="instagram-storie__progress-item__bar"
-            [style]="progressValue(index)">
+            [ngStyle]="{'width' : progressValue(index)}"
+            >
           </div>
         </div>
       
