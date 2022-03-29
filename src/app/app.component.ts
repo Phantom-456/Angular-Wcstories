@@ -11,8 +11,6 @@ export interface storie{
   images:string[]
   index:number[]
 }
-declare function renderInFace(index:number,element:string):void;
-declare function createStorie(storie:storie):string;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
